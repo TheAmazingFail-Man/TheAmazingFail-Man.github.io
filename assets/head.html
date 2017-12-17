@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>head</title>
+	<link href="css/style_head.css" rel="stylesheet" type="text/css">
+<script>
+	imglist = new Array()
+	imglist[0]=new Image()
+	imglist[1]=new Image()
+	imglist[2]=new Image()
+	imglist[3]=new Image()
+	imglist[4]=new Image()
+	imglist[5]=new Image()
+	imglist[6]=new Image()
+	imglist[7]=new Image()
+	imglist[0].src="img/form1.png"
+	imglist[1].src="img/form2.png"
+	imglist[2].src="img/form3.png"
+	imglist[3].src="img/form4.png"
+	imglist[4].src="img/form5.png"
+	imglist[5].src="img/form6.png"
+	imglist[6].src="img/form7.png"
+	imglist[7].src="img/form8.png"
+
+	function random(min, max)
+	{
+		var rand = min - 0.5 + Math.random() * (max - min + 1)
+		rand = Math.round(rand)
+		
+		return rand
+	}
+
+	function replace(img)
+	{
+		var number = random(0, 7)
+		while (img == imglist[number].src)
+			number = random(0, 7)
+
+		return imglist[number].src
+	}
+</script>
+</head>
+<body>
+	<img src="img/form1.png" id="form1"
+	onMouseOver="document.getElementById('form1').src = replace(document.getElementById('form1').src)">
+	<img src="img/form2.png" id="form2"
+	onMouseOver="document.getElementById('form2').src = replace(document.getElementById('form2').src)">
+	<img src="img/form3.png" id="form3"
+	onMouseOver="document.getElementById('form3').src = replace(document.getElementById('form3').src)">
+	<img src="img/form4.png" id="form4"
+	onMouseOver="document.getElementById('form4').src = replace(document.getElementById('form4').src)">
+	<img src="img/form5.png" id="form5"
+	onMouseOver="document.getElementById('form5').src = replace(document.getElementById('form5').src)">
+	<img src="img/form6.png" id="form6"
+	onMouseOver="document.getElementById('form6').src = replace(document.getElementById('form6').src)">
+	<img src="img/form7.png" id="form7"
+	onMouseOver="document.getElementById('form7').src = replace(document.getElementById('form7').src)">
+	<img src="img/form8.png" id="form8"
+	onMouseOver="document.getElementById('form8').src = replace(document.getElementById('form8').src)">
+</body>
+</html>
