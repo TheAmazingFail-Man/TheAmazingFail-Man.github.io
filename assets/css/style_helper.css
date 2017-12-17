@@ -1,0 +1,39 @@
+a {
+	text-decoration: none;
+	font-family: "Century Gothic";
+	color: black;
+	background: white;
+	padding-top: 13%;
+	padding-bottom: 13%;
+}
+
+a.home_page {
+	position: absolute;
+	top: 0%;
+	padding-left: 15%;
+	padding-right: 19%;
+}
+
+a:hover {
+	color: white;
+	background-color: red;
+}
+
+a.joining {
+	position: absolute;
+	top: 20%;
+	padding-left: 30%;
+	padding-right: 33%;
+}
+
+a.support {
+	position: absolute;
+	top: 40%;
+	padding-left: 27%;
+	padding-right: 31%;
+}
+
+img.button {
+	position: absolute;
+	top: 65%;
+}
