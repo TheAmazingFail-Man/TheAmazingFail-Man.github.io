@@ -1,0 +1,27 @@
+body {
+	background-image: url(../img/main_background.jpg);
+	background-size: cover;
+}
+
+p {
+	font-family: "Century Gothic";
+	font-size: 140%;
+	padding-left: 5%;
+	padding-right: 10%;
+}
+
+p.achievements {
+	text-align: center;
+}
+
+img {
+	padding-top: 2%;
+	padding-left: 5%;
+}
+
+ol {
+	font-family: "Century Gothic";
+	font-size: 140%;
+	padding-left: 5%;
+	padding-right: 10%;
+}
